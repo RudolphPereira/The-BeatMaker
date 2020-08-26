@@ -14,6 +14,8 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
     <title>BeatMaker</title>
 
     <header>
@@ -23,7 +25,7 @@
     <div class="sequencer">
       <div class="kick-track">
         <div class="controls">
-          <h1>Kick</h1>
+          <h2>Kick</h2>
           <button data-track="0" class="kick-button mute">
             <i class="fas fa-volume-mute"></i>
           </button>
@@ -50,7 +52,7 @@
 
       <div class="snare-track">
         <div class="controls">
-          <h1>Snare</h1>
+          <h2>Snare</h2>
           <button data-track="1" class="snare-button mute">
             <i class="fas fa-volume-mute"></i>
           </button>
@@ -77,7 +79,7 @@
 
       <div class="hihat-track">
         <div class="controls">
-          <h1>Hihat</h1>
+          <h2>Hihat</h2>
           <button data-track="2" class="hihat-button mute">
             <i class="fas fa-volume-mute"></i>
           </button>
@@ -107,8 +109,7 @@
     <audio src="./allSounds/kick-808.wav" class="kick-sound"></audio>
     <audio src="./allSounds/snare-808.wav" class="snare-sound"></audio>
     <audio src="./allSounds/hihat-808.wav" class="hihat-sound"></audio>
-  </head>
-  <body>
+
     <script src="./app.js"></script>
   </body>
 </html>
