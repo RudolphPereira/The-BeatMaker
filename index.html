@@ -31,8 +31,7 @@
           </button>
           <select name="kick-select" class="kick-select">
             <option value="./allSounds/kick-808.wav">Kick 808</option>
-            <option value="./allSounds/kick-acoustic01.wav">
-              Kick Acoustic
+            <option value="./allSounds/kick-acoustic01.wav">Kick Acoustic</option>
             </option>
             <option value="./allSounds/kick-heavy.wav">Kick Heavy</option>
           </select>
@@ -104,6 +103,10 @@
         </div>
       </div>
       <button class="play">Play</button>
+      <div class="tempo">
+        <input type="range" class="tempo-slider" max="300" min="20" value="160" >
+        <p>Tempo: <span class="tempo-nr">160</span></p>
+      </div>
     </div>
 
     <audio src="./allSounds/kick-808.wav" class="kick-sound"></audio>
