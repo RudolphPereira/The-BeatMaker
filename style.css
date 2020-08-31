@@ -17,6 +17,11 @@ header {
   margin: 2rem;
 }
 
+i,
+svg {
+  pointer-events: none;
+}
+
 .kick-pad,
 .snare-pad,
 .hihat-pad {
@@ -91,16 +96,31 @@ select {
 
 select {
   padding: 0.2rem;
+  box-shadow: 2px 2px 6px grey;
 }
 
 .play {
   padding: 0.5rem 2rem;
   font-size: 0.9rem;
   margin: 2rem;
+  box-shadow: 2px 2px 6px grey;
 }
 
 .pad {
   transition: all 0.5s ease;
+}
+
+.pad.active {
+  box-shadow: 2px 2px 6px grey;
+}
+
+.mute {
+  transition: all 0.3s ease;
+}
+.mute.active {
+  color: rgb(87, 85, 85);
+  background: rgb(177, 176, 176);
+  box-shadow: 2px 2px 6px grey;
 }
 
 @keyframes playTrack {
